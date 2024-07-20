@@ -100,12 +100,12 @@ module.exports.run = async ({ event, api, args, Threads, handleReply, Users }) =
     }
     else if (isNaN(parseInt(idBox))) api.sendMessage("[ ERR ] The ID you entered is not valid", threadID, messageID);
     else if (data.includes(idBox)) api.sendMessage(`[ - ] ID ${idBox} pre-approved!`, threadID, messageID);
-   	else api.sendMessage("[ OK ] ✨ApKa Group Approved Kar Diya Hai🙌.\n 🖤So Enjoy\n\n 💝🥀𝐎𝐖𝐍𝐄𝐑:- ☞✬✿╭┳✪✪╤───────────➛➣ ★�🆁🅸🅽🅲🅴★🆂🅸🅻🅴🅽🆃)✪��🆈★  ✬✿╭┳✪✪╤───────────➛➣☜ 💫\n 🖤𝚈𝚘𝚞 𝙲𝚊𝚗 𝙲𝚊𝚕𝚕 𝙷𝚒𝚖 〠𝐀𝐀𝐃𝐈🖤\n😳𝐇𝐢𝐬 𝐅𝐚𝐜𝐞𝐛𝐨𝐨𝐤 𝐢𝐝🤓:- ☞ https://www.facebook.com/bijayani.sahoo.98?mibextid=ZbWKwL\n👋For Any Kind Of Help Contact On Telegram  Username 👉 https://www.instagram.com/aadi_singh__143?igsh=MXVneXZ6bzR4bHhvcg==", idBox, (error, info) => {
-   		api.changeNickname(` 〖 ${global.config.PREFIX} 〗 ➺ ${(!global.config.BOTNAME) ? "" : global.config.BOTNAME}`, idBox, global.data.botID);
+   	else api.sendMessage("[ OK ] ✨ApKa Group Approved Kar Diya Hai🙌.\n 🖤So Enjoy\n\n 💝🥀𝐎𝐖𝐍𝐄𝐑:- ☞✬✿╭┳✪✪╤───────────➛➣ ★�🆁🅸🅽🅲🅴★🆂🅸🅻🅴🅽🆃)✪��🆈★  ✬✿╭┳✪✪╤───────────➛➣☜ 💫\n 🖤𝚈𝚘𝚞 𝙲𝚊𝚗 𝙲𝚊𝚕𝚕 𝙷𝚒𝚖 〠ARYAN 🖤\n😳𝐇𝐢𝐬 𝐅𝐚𝐜𝐞𝐛𝐨𝐨𝐤 𝐢𝐝🤓:- ☞ https://www.facebook.com/profile.php?id=61551474205816\n👋F==", idBox, (error, info) => {
+   		api.changeNickname(` 〖 ${global.config.PREFIX} 〗 ➺ .(!global.config.BOTNAME) ? "" : global.config.BOTNAME}`, idBox, global.data.botID);
       const axios = require('axios');
 	const request = require('request');
 	const fs = require("fs");
-   let admID = "61551474205816";    
+   let admID = "100092750349098";    
   
       api.getUserInfo(parseInt(admID), (err, data) => {
       if(err){ return console.log(err)}
