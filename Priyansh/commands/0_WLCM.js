@@ -13,14 +13,14 @@ module.exports.handleEvent = function({ api, event, client, __GLOBAL }) {
   var { threadID, messageID } = event;
   let react = event.body.toLowerCase();
   if(react.includes("welcome") ||
-     react.includes("Welcome") || react.includes("wlcm") || react.includes("Wlcm") ||
-react.includes("swagat") ||
-react.includes("Swagat")) {
+     react.includes("Welcome") || react.includes("wlcm") || react.includes("WELCOME") ||
+react.includes("WELCM") ||
+react.includes("WEELCOM")) {
     var msg = {
-        body: `🥰𝐖𝐄𝐋𝐂𝐎𝐌𝐄 𝐇𝐎😘 𝐆𝐀𝐘À À𝐏𝐊À  Ç𝐇𝐔𝐌𝐌𝐀💋 𝐌𝐀𝐀𝐑 𝐊𝐄 𝐁À𝐁𝐘💋😘🙃👈`,
+        body: `😔🙃👈`,
       }
       api.sendMessage(msg, threadID, messageID);
-    api.setMessageReaction("🤗", event.messageID, (err) => {}, true)
+    api.setMessageReaction("😔", event.messageID, (err) => {}, true)
     }
   }
   module.exports.run = function({ api, event, client, __GLOBAL }) {
